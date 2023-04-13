@@ -87,6 +87,6 @@ def test_dicts():
     # TODO создайте словарь
     d = dict(zip(first, second))
     dict_length = len(d)
-    print(f"Количество значений словаря равно {dict_length}: {str(second).replace('[', '').replace(']', '')}")
+    print(f"Количество значений словаря равно {dict_length}: {str(list(d.values())).replace('[', '').replace(']', '')}")
     assert isinstance(d, dict)
     assert len(d) == 5
